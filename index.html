@@ -1,158 +1,218 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-<meta charset="UTF-8">
-<title>Proyecto Grupo 7</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Grupo 7</title>
 
-<style>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #e9e9e9;
-  margin: 0;
-  padding: 30px;
-}
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #e9e9e9;
+      color: #1f1f1f;
+    }
 
-/* CONTENEDOR PRINCIPAL */
-.contenedor {
-  max-width: 950px;
-  margin: auto;
-  background: #fff;
-  padding: 35px 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
+    .contenedor {
+      max-width: 1150px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
 
-/* TITULO */
-h1 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 22px;
-  font-weight: bold;
-}
+    .tarjeta {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 26px 28px 35px 28px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    }
 
-/* SECCIONES */
-h2 {
-  margin-top: 30px;
-  font-size: 18px;
-}
+    .banner {
+      background: linear-gradient(90deg, #0b5cab, #1098c9);
+      color: white;
+      padding: 14px 18px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 26px;
+    }
 
-/* TEXTO */
-p {
-  text-align: justify;
-  font-size: 15px;
-  line-height: 1.7;
-}
+    h1 {
+      margin: 0 0 24px 0;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 800;
+      color: #000;
+    }
 
-/* LISTA INTEGRANTES */
-.integrantes p {
-  margin: 4px 0;
-}
+    h2 {
+      color: #0d4f8b;
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-weight: 800;
+    }
 
-/* LISTA KPIs */
-ul {
-  margin-top: 15px;
-  padding-left: 25px;
-}
+    h3 {
+      font-size: 18px;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      color: #000;
+      font-weight: 800;
+    }
 
-ul li {
-  margin-bottom: 10px;
-}
+    p {
+      font-size: 15px;
+      line-height: 1.8;
+      text-align: justify;
+      margin: 0 0 16px 0;
+    }
 
-/* IMAGENES */
-.imagen {
-  text-align: center;
-  margin-top: 30px;
-}
+    .integrantes {
+      margin-bottom: 28px;
+    }
 
-.imagen img {
-  width: 100%;
-  max-width: 900px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
+    .integrantes p {
+      margin: 8px 0;
+      font-size: 15px;
+    }
 
-/* ICONO TITULO */
-.titulo-icono {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+    ul {
+      margin: 10px 0 18px 0;
+      padding-left: 24px;
+    }
 
-</style>
+    ul li {
+      margin-bottom: 12px;
+      line-height: 1.7;
+      font-size: 15px;
+    }
 
+    .intro {
+      color: #4a4a4a;
+    }
+
+    .texto-destacado strong {
+      font-weight: 800;
+      color: #000;
+    }
+
+    .imagen {
+      margin-top: 24px;
+      text-align: center;
+    }
+
+    .imagen img {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 8px;
+      border: 1px solid #d8d8d8;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .seccion-imagenes {
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .tarjeta {
+        padding: 20px;
+      }
+
+      .banner {
+        font-size: 14px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      p, li, .integrantes p {
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="contenedor">
+  <div class="contenedor">
+    <div class="tarjeta">
 
-<h1>PROYECTO GRUPO 7</h1>
+      <div class="banner">📊 Proyecto de Análisis de Producción con Power BI</div>
 
-<section>
+      <h1>PROYECTO GRUPO 7</h1>
 
-<h2>INTEGRANTES</h2>
+      <h3>INTEGRANTES</h3>
+      <div class="integrantes">
+        <p>- Renzo Hinostroza Aylas</p>
+        <p>- Piero Paredes Santa Cruz</p>
+        <p>- Patricia Escajadillo Escalante</p>
+        <p>- Jorge Luis Pariapaza Gutierrez</p>
+        <p>- Kely Quintana Montaya</p>
+      </div>
 
-<div class="integrantes">
-<p>- Renzo Hinostroza Aylas</p>
-<p>- Piero Paredes Santa Cruz</p>
-<p>- Patricia Escajadillo Escalante</p>
-<p>- Jorge Luis Pariapaza Gutierrez</p>
-<p>- Kely Quintana Montaya</p>
-</div>
+      <h2>Presentation Layer (Capa de Presentación)</h2>
 
-<h2 class="titulo-icono">📊 Presentation Layer (Capa de Presentación)</h2>
+      <p class="intro texto-destacado">
+        La capa de presentación del proyecto para el análisis del
+        <strong>INDICADOR PROMEDIO MENSUAL DEL CUMPLIMIENTO DEL PLAN DE PRODUCCIÓN EN UNA INDUSTRIA CERVECERA EN LA PLANTA DE SAN JUAN</strong>
+        está implementada con <strong>Microsoft Power BI</strong>, transformando los datos en reportes interactivos
+        que permiten monitorear el desempeño de las líneas de producción, marcas y supervisores.
+      </p>
 
-<p>
-La capa de presentación del proyecto para el análisis del <strong>INDICADOR PROMEDIO MENSUAL DEL CUMPLIMIENTO DEL PLAN DE PRODUCCIÓN EN UNA INDUSTRIA CERVECERA EN LA PLANTA DE SAN JUAN</strong> está implementada con 
-<strong>Microsoft Power BI</strong>, transformando los datos en reportes interactivos 
-que permiten monitorear el desempeño de las líneas de producción, marcas y supervisores. 
-Cada informe fue diseñado para apoyar la toma de decisiones ejecutivas 
-y brindar un análisis detallado del funcionamiento de la planta y el cumplimiento de su plan de producción.
-</p>
+      <p class="texto-destacado">
+        Cada informe fue diseñado para apoyar la <strong>toma de decisiones ejecutivas</strong> y brindar un análisis
+        detallado del funcionamiento de la planta y del cumplimiento de su plan de producción.
+      </p>
 
-<ul>
-<li>📌 <strong>Indicadores clave (KPIs):</strong> Seguimiento de métricas como PPA, HL no producidos.</li>
-<li>📌 <strong>Narrativa visual:</strong> Cada informe responde a preguntas de negocio concretas, resaltando resultados destacados.</li>
-</ul>
+      <ul>
+        <li>📌 <strong>Indicadores clave (KPIs):</strong> seguimiento de métricas como PPA y HL no producidos.</li>
+        <li>📌 <strong>Narrativa visual:</strong> cada informe responde a preguntas de negocio concretas, resaltando resultados destacados.</li>
+      </ul>
 
-<p>
-A continuación se muestra el informe elaborado en <strong>POWER BI</strong>:
-</p>
+      <p>
+        A continuación se muestra el informe elaborado en <strong>POWER BI</strong>:
+      </p>
 
-<!-- IMÁGENES -->
+      <div class="seccion-imagenes">
+        <div class="imagen"><img src="1.PNG" alt="Imagen 1"></div>
+        <div class="imagen"><img src="2.PNG" alt="Imagen 2"></div>
+        <div class="imagen"><img src="3. Indicadores 1.PNG" alt="Indicadores 1"></div>
+        <div class="imagen"><img src="4. Indicadores 2.PNG" alt="Indicadores 2"></div>
+        <div class="imagen"><img src="5. Dashboard.PNG" alt="Dashboard"></div>
+        <div class="imagen"><img src="6. Reporte.PNG" alt="Reporte"></div>
+        <div class="imagen"><img src="7. Pregunta 1.PNG" alt="Pregunta 1"></div>
+        <div class="imagen"><img src="8. Detalle 1.PNG" alt="Detalle 1"></div>
+        <div class="imagen"><img src="9. Pregunta 2.PNG" alt="Pregunta 2"></div>
+        <div class="imagen"><img src="10. Detalle 2.PNG" alt="Detalle 2"></div>
+        <div class="imagen"><img src="11. Pregunta 3.PNG" alt="Pregunta 3"></div>
+        <div class="imagen"><img src="12. Detalle 3.PNG" alt="Detalle 3"></div>
+        <div class="imagen"><img src="13. Pregunta 4.PNG" alt="Pregunta 4"></div>
+        <div class="imagen"><img src="14. Detalle 4.PNG" alt="Detalle 4"></div>
+        <div class="imagen"><img src="15. Pregunta 5.PNG" alt="Pregunta 5"></div>
+        <div class="imagen"><img src="16. Detalle 5.PNG" alt="Detalle 5"></div>
+        <div class="imagen"><img src="17. Pregunta 6.PNG" alt="Pregunta 6"></div>
+        <div class="imagen"><img src="18. Detalle 6.PNG" alt="Detalle 6"></div>
+        <div class="imagen"><img src="19. Pregunta 7.PNG" alt="Pregunta 7"></div>
+        <div class="imagen"><img src="20. Detalle 7.PNG" alt="Detalle 7"></div>
+        <div class="imagen"><img src="21. Pregunta 8.PNG" alt="Pregunta 8"></div>
+        <div class="imagen"><img src="22. Detalle 8.PNG" alt="Detalle 8"></div>
+        <div class="imagen"><img src="23. Pregunta 9.PNG" alt="Pregunta 9"></div>
+        <div class="imagen"><img src="24. Detalle 9.PNG" alt="Detalle 9"></div>
+        <div class="imagen"><img src="25. Pregunta 10.PNG" alt="Pregunta 10"></div>
+        <div class="imagen"><img src="26. Detalle 10.PNG" alt="Detalle 10"></div>
+      </div>
 
-<div class="imagen"><img src="1.PNG"></div>
-<div class="imagen"><img src="2.PNG"></div>
-<div class="imagen"><img src="3. Indicadores 1.PNG"></div>
-<div class="imagen"><img src="4. Indicadores 2.PNG"></div>
-<div class="imagen"><img src="5. Dashboard.PNG"></div>
-<div class="imagen"><img src="6. Reporte.PNG"></div>
-<div class="imagen"><img src="7. Pregunta 1.PNG"></div>
-<div class="imagen"><img src="8. Detalle 1.PNG"></div>
-<div class="imagen"><img src="9. Pregunta 2.PNG"></div>
-<div class="imagen"><img src="10. Detalle 2.PNG"></div>
-<div class="imagen"><img src="11. Pregunta 3.PNG"></div>
-<div class="imagen"><img src="12. Detalle 3.PNG"></div>
-<div class="imagen"><img src="13. Pregunta 4.PNG"></div>
-<div class="imagen"><img src="14. Detalle 4.PNG"></div>
-<div class="imagen"><img src="15. Pregunta 5.PNG"></div>
-<div class="imagen"><img src="16. Detalle 5.PNG"></div>
-<div class="imagen"><img src="17. Pregunta 6.PNG"></div>
-<div class="imagen"><img src="18. Detalle 6.PNG"></div>
-<div class="imagen"><img src="19. Pregunta 7.PNG"></div>
-<div class="imagen"><img src="20. Detalle 7.PNG"></div>
-<div class="imagen"><img src="21. Pregunta 8.PNG"></div>
-<div class="imagen"><img src="22. Detalle 8.PNG"></div>
-<div class="imagen"><img src="23. Pregunta 9.PNG"></div>
-<div class="imagen"><img src="24. Detalle 9.PNG"></div>
-<div class="imagen"><img src="25. Pregunta 10.PNG"></div>
-<div class="imagen"><img src="26. Detalle 10.PNG"></div>
-
-</section>
-
-</div>
+    </div>
+  </div>
 
 </body>
 </html>
